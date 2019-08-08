@@ -4,6 +4,8 @@ import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../context';
 import StyledHero from '../components/StyledHero';
+import ReactFancyBox from 'react-fancybox';
+import 'react-fancybox/lib/fancybox.css';
 
 class SingleRoom extends Component {
     constructor(props) {
@@ -42,7 +44,7 @@ class SingleRoom extends Component {
                 <section className="single-room">
                     <div className="single-room-images">
                         {defaultImg.map((item, index) => {
-                            return <img key={index} src={item} alt={name}/>
+                            return <ReactFancyBox key={index} thumbnail={item} image={item}/>
                         })}
                     </div>
                     <div className="single-room-info">
