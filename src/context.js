@@ -19,7 +19,8 @@ class RoomProvider extends Component {
         minSize: 0,
         maxSize: 0,
         breakfast: false,
-        pets: false
+        pets: false,
+        videoplaylist: []
     }
     //getData
     getData = async () => {
